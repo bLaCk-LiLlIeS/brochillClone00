@@ -254,35 +254,46 @@ select {
 }
 
 /* mediaquiries */
-@media screen and (max-width: 600px) {
-  .incontent {
-    display: block;
+@media screen and (max-width:600px){
+  *{
+   padding: unset;
   }
-  .content {
-    z-index: -1;
-  }
-  header {
-    overflow-x: scroll;
-  }
-  .cleft {
-    width: 100%;
-  }
-  .cimage {
-    width: 80vw;
-  }
-  footer {
-    width: 100%;
-    overflow: scroll;
-    gap: 10rem;
-    padding: 1rem 20rem;
-  }
-  .drpdwn {
-    overflow-x: visible;
-    z-index: 1;
-    height: max-content;
-  }
-  .explore {
-    overflow-x: unset;
-    z-index: 1;
-  }
+   header{
+       overflow-x: scroll;
+       position: fixed;
+   }
+   .incontent{
+       display: block;
+       font-size: medium;
+       
+   }
+   .cleft{
+       width: fit-content;
+   }
+   .cimage{
+       width: 70vw;
+   }
+   footer{
+       width: 100%;
+       flex-wrap: wrap;
+       overflow-y:scroll;
+      gap: 2rem;
+      padding: 0 ;
+   }
+   .exploreCoontainer{
+       position: relative;
+       left:2.5rem
+   }
+   .exploreul{
+       position: relative;
+       left: 8rem;
+   }
+   ol{
+       width: fit-content;
+       padding-left: 0.2rem;
+   }
+   ol li{
+     width: 17rem;
+   }
+   
 }
